@@ -331,3 +331,29 @@ a {
 .chat-form-container button:hover {
 	background: var(--dark-color-b);
 }
+
+/* Message sent by the current user */
+.message.user-message {
+	background: #d4edda; /* Light green background */
+	border-radius: 8px;
+	color: #155724; /* Dark green text color */
+	align-self: flex-end; /* Align message to the right */
+	text-align: right;
+	margin-left: auto; /* Push to the right side */
+	max-width: 70%;
+}
+
+/* Override meta styling for user messages */
+.message.user-message .meta {
+	color: #155724;
+}
+
+/* Message received from others (default style) */
+.message {
+	max-width: 70%;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
